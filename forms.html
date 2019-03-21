@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Опитування</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <a href="index.html"> Main Page </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Соціологічне опитування на тему "Книги"</h1>
+
+        <form method="POST" action="https://formspree.io/yurikanunak@gmail.com">
+            <ol>
+                <li>
+                    <label> Введіть Ваше ім'я
+                    <br>
+                    <br>
+                       <input type="text" name="name" placeholder="Ім'я" required>
+                    </label>
+                    <br>
+                    <br>
+                </li>
+
+                <li>
+                    <label for="years"> Скільки Вам років?
+                    <br>
+                    <br>
+                    <select id="years" name="years" required>
+                        <option value="">--Виберіть значення--</option>
+                        <option value="10-18">10-18</option>
+                        <option value="19-30">19-30</option>
+                        <option value="31-45">31-45</option>
+                        <option value="від 46">від 46</option>
+                    </select>  
+                    </label>
+                    <br>
+                    <br>
+                </li>
+
+                <li>
+                    <label>Стать</label>
+                    <br>
+                    <br>
+                    <label>
+                            <input type="radio" name="gender" value="чол" required>Чоловіча
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                            <input type="radio" name="gender" value="жін">Жіноча
+                    </label>
+                    <br>
+                    <br>
+                </li>
+
+                <li>
+                    <label> Якого стилю книги полюбляєте читати?</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="fantasy" value="fantasy" name=book_type>
+                    <label for="fantasy">Фентезі</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="sci_fi" value="sci_fi" name=book_type>
+                    <label for="sci_fi">Наукова фантастика</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="thriller" value="thriller" name=book_type>
+                    <label for="thriller">Триллер</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="detective" value="detective" name=book_type>
+                    <label for="detective">Детектив</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="other" value="other" name=book_type>
+                    <label for="other">Інше</label>
+                    <br>
+                    <br>
+                </li>
+
+                <li>
+                    <label> Вкажіть Вашу улюблену книгу
+                    <br>
+                    <br>
+                       <input type="text" name="book-name" placeholder="Назва книги" required>
+                    </label>
+                    <br>
+                    <br>
+                </li>
+
+                <li>
+                    <label> Вкажіть Вашу елeктронну скриньку
+                    <br>
+                    <br>
+                       <input type="email" name="e-mail" placeholder="e-mail" required>
+                    </label>
+                    <br>
+                    <br>
+                </li>
+            </ol>
+            <input type="submit" value="Submit" />
+        </form>
+    </main>
+    <footer>
+    </footer>
 </body>
+
 </html>
